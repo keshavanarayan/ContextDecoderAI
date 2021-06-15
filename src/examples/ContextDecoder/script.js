@@ -25,6 +25,9 @@ radius_slider.addEventListener( 'touchend', onSliderChange, false )
 
 const displayanalysis_checkbox = document.querySelector('input[id="RH_IN:DisplayAnalysis"]');
 displayanalysis_checkbox.addEventListener( 'change', onSliderChange, false )
+const textdisplay_checkbox = document.querySelector('input[id="RH_IN:TextDisplay"]');
+textdisplay_checkbox.addEventListener( 'change', onSliderChange, false )
+
 
 
 let points = []

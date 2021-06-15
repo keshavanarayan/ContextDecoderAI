@@ -74,6 +74,7 @@
             /* Style the tab */
             .tab {
             overflow: hidden;
+            font-family: monospace;
             border: 1px solid #ccc;
             background-color: #5e5e5e;
             }
@@ -81,6 +82,7 @@
             /* Style the buttons inside the tab */
             .tab button {
             background-color: inherit;
+            font-family: monospace;
             float: left;
             border: none;
             outline: none;
@@ -103,8 +105,11 @@
             /* Style the tab content */
             .tabcontent {
             display: none;
-            padding: 6px 12px;
-            border: 1px solid #ccc;
+            text-align: center;
+            font-size: 10px;
+            font-family: monospace;
+            border: 3px solid rgb(255, 255, 255);
+            padding: 12px 12px;
             border-top: none;
             }
         
@@ -132,6 +137,10 @@
             text-align: center;
             font-size: 12px;
             font-family: monospace;
+            }
+
+            img {
+                width: 100px; /* set image width */
             }
 
             #loader {
@@ -172,10 +181,29 @@
           </div>
         
           <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Team')">Team</button>
             <button class="tablinks" onclick="openCity(event, 'Naples')">Naples</button>
             <button class="tablinks" onclick="openCity(event, 'Moscow')">Moscow</button>
             <button class="tablinks" onclick="openCity(event, 'Chennai')">Chennai</button>
             <button class="tablinks" onclick="openCity(event, 'Bangkok')">Bangkok</button>
+
+          </div>
+
+          <div id="Team" class="tabcontent">
+            <h3>The Context Decoder is an app developed in IAAC, Barcelona - Institute of Advanced Architecture of Catalonia </h3>
+            <h3>by Keshava Narayan, Laura Marsillo, Nataliya Voinova, Nawapan Suntorachai </h3>
+
+            <img id="myImage1"
+            src="./Keshava.png">
+
+            <img id="myImage2"
+            src="./Laura.png">
+
+            <img id="myImage3"
+            src="./Nataliya.png">
+
+            <img id="myImage3"
+            src="./Nawapan.png">
 
           </div>
           
@@ -250,6 +278,23 @@
         </div>
         
     </div>
+
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      </script>
+
         <script type="module" src="./script.js"></script>
         </div>
     </body>

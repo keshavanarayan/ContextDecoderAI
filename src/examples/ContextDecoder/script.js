@@ -264,7 +264,7 @@ function init()
   THREE.Object3D.DefaultUp = new THREE.Vector3( 0, 0, 1 );
 
   scene = new THREE.Scene()
-  scene.background = new THREE.Color("rgb(109, 109, 109)")
+  scene.background = new THREE.Color("rgb(0, 0, 0)")
   camera = new THREE.PerspectiveCamera( 45, window.innerWidth/window.innerHeight, 1, 10000 )
   camera.position.x = 100
   camera.position.y = 100
@@ -276,7 +276,7 @@ function init()
   document.body.appendChild(renderer.domElement)
 
   controls = new OrbitControls( camera, renderer.domElement  )
-  controls.target.set(30, 39, -5);
+  controls.target.set(90, 67, 0);
 
   // add a directional light
   const directionalLight = new THREE.DirectionalLight( 0xffffff )

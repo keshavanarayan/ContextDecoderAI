@@ -5,6 +5,7 @@
 An attempt using ML to decode the attractiveness of any locality in any city and display results using a node.js server acting as a bridge between ML and compute.rhino3d servers.
 
 ## Contents
+- **Link to App**: https://contextdecoder.herokuapp.com/examples/ContextDecoder/
 - **Link to Video Explaining App Functionality**: https://youtu.be/6oAXbdAE1ws
 - **Easy to get started**: fork/clone this repo and run it locally for testing the offline app and source files to the online version.
 - **Easy to customize**: Add your own datasets pertaining to attrractivity to yield results immediately.

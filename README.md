@@ -16,11 +16,11 @@ https://www.alessiovaccaro.com/resources/kmeans.php
 https://vitalflux.com/elbow-method-silhouette-score-which-better/
 https://www.kaggle.com/abhishekyadav5/kmeans-clustering-with-elbow-method-and-silhouette
 
-###Twitter Hashtag- Sentiment analysis
+### Twitter Hashtag- Sentiment analysis
 
 https://github.com/giuseppegambino/Italian-Sentiment-Analysis-with-Spark/blob/master/tweetSentimentRadici.py
 
-###Google maps API
+### Google maps API
 
 https://github.com/codingforentrepreneurs/30-Days-of-Python/blob/master/tutorial-reference/Day%2020/Geocoding%20%26%20Places%20API%20with%20Google%20Maps.ipynb
 https://www.youtube.com/watch?v=ckPEY2KppHc&list=PLEsfXFp6DpzQjDBvhNy5YbaBx9j-ZsUe6&index=20
